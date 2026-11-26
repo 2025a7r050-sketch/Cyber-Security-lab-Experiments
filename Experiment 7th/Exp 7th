@@ -1,26 +1,28 @@
-Experiment No. 6: Data Transformation Within the MD5 Hashing Algorithm
+# Experiment No. 7: Cryptographic Hash Function Properties
 
-Aim: To understand the working of the MD5 hashing algorithm through padding, initialization, nonlinear functions and buffer updates.
+**Aim:** To study the properties of cryptographic hash functions, including preimage resistance, second preimage resistance and collision resistance.
 
-Tools Required:
-
+**Tools Required:**
 1. Computer/Laptop
 2. Web browser
-3. MD5 hashing simulator
+3. Cryptographic Hash Simulator
 
-Theory:
-MD5 is a hashing algorithm that converts input data into a fixed-length 128-bit hash value. It processes data in 512-bit blocks using padding, nonlinear functions, constants, circular shifts and buffer updates.
+**Theory:**  
+A cryptographic hash function converts input data into a fixed-length hash value. It provides data integrity and security. A secure hash function should satisfy preimage resistance, second preimage resistance and collision resistance.
 
-Procedure:
+**Procedure:**
+1. Open the cryptographic hash simulator.
+2. Enter a message and select the SHA-256 algorithm.
+3. Generate and observe the hash value.
+4. Change the input slightly and compare the resulting hashes.
+5. Perform the preimage resistance challenge.
+6. Perform the second preimage and collision resistance challenges.
+7. Observe and record the results.
 
-1. Open the MD5 hashing simulator in a web browser.
-2. Enter a text message and click Generate.
-3. Observe the message padding and initialization steps.
-4. Apply the nonlinear functions and buffer operations.
-5. Observe the addition of constants and circular shifts.
-6. Update and shift the buffers to obtain the final hash value.
+**Properties:**
+- **Preimage Resistance:** Finding the original input from its hash is computationally infeasible.
+- **Second Preimage Resistance:** Finding another input with the same hash as a given input is computationally infeasible.
+- **Collision Resistance:** Finding two different inputs with the same hash is computationally infeasible.
 
-Result:
-The working of the MD5 hashing algorithm was studied, and the transformation of input data into a 128-bit hash value was observed successfully.
-
-Note: MD5 is not considered secure for modern cryptographic applications because it is vulnerable to collision attacks.
+**Result:**  
+The properties of cryptographic hash functions were studied using the simulator, and the working of SHA-256 hashing and its security properties was observed successfully.
